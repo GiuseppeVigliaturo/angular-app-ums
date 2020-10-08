@@ -9,45 +9,49 @@ export class UserService {
   users: UserInterface[] = [
     {
       id: 1,
-      name: 'Hidran1',
-      lastname: 'Arias',
-      email: 'hidran@gmail.com',
+      name: 'Giuseppe',
+      lastname: 'Vigliaturo',
+      email: 'vigliaturo@gmail.com',
       fiscalcode: 'RSAHRN72M22Z444S',
       province: 'Torino',
-      phone: '454545455',
-      age: 43
+      phone: '123456789',
+      age: 26
 
     },
     {
       id: 2,
-      name: 'Hidran2',
-      lastname: 'Arias',
-      email: 'hidran@gmail.com',
+      name: 'Giuseppe2',
+      lastname: 'Vigliaturo2',
+      email: 'vigliaturo2@gmail.com',
       fiscalcode: 'RSAHRN72M22Z444S',
       province: 'Torino',
-      phone: '454545455',
-      age: 43
+      phone: '123456789',
+      age: 50
+
     },
     {
       id: 3,
-      name: 'Hidran3',
-      lastname: 'Arias',
-      email: 'hidran@gmail.com',
+      name: 'Giuseppe3',
+      lastname: 'Vigliaturo3',
+      email: 'vigliaturo3@gmail.com',
       fiscalcode: 'RSAHRN72M22Z444S',
       province: 'Torino',
-      phone: '454545455',
-      age: 43
+      phone: '123456789',
+      age: 44
+
     },
     {
       id: 4,
-      name: 'Hidran4',
-      lastname: 'Arias',
-      email: 'hidran@gmail.com',
+      name: 'Giuseppe4',
+      lastname: 'Vigliaturo4',
+      email: 'vigliaturo4@gmail.com',
       fiscalcode: 'RSAHRN72M22Z444S',
       province: 'Torino',
-      phone: '454545455',
-      age: 43
+      phone: '123456789',
+      age: 34
+
     }
+
   ];
   constructor() {
   }
