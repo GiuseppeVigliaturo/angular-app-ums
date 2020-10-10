@@ -33,6 +33,9 @@ export class UserDetailComponent implements OnInit {
   ngOnInit() {
     this.user = new User();
     this.route.params.subscribe((params) => {
+      if(!params.id){
+        return;
+      }
       this.user = this.userService.getUser(+params.id);
 
     });
@@ -46,6 +49,7 @@ export class UserDetailComponent implements OnInit {
       this.router.navigate(['users']);
     } else {
       this.userService.createUser(this.user);
+      this.router.navigate(['users']);
     }
   }
 

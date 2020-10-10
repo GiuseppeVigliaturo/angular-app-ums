@@ -79,7 +79,8 @@ export class UserService {
 
 
   createUser(user: UserInterface) {
-
+    user.id = this.users.length + 1;
+    //alert(user)
     //splice ci permette di inserire/eliminare un elemento di un array
     this.users.splice(0, 0, user);
 
