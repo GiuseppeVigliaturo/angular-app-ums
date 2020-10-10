@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { User } from "../classes/user";
 import { UserService } from "../services/user.service";
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute,Router } from '@angular/router';
 
 @Component({
   selector: "app-user-detail",
@@ -21,7 +21,7 @@ export class UserDetailComponent implements OnInit {
     return this.__user;
   }
 
-  constructor(private userService: UserService, private route: ActivatedRoute) {
+  constructor(private userService: UserService, private route: ActivatedRoute,private router: Router) {
 
   }
 
@@ -43,6 +43,7 @@ export class UserDetailComponent implements OnInit {
   saveUser() {
     if (this.user.id > 0) {
       this.userService.updateUser(this.user);
+      this.router.navigate(['users']);
     } else {
       this.userService.createUser(this.user);
     }
