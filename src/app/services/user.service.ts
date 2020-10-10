@@ -79,6 +79,8 @@ export class UserService {
 
 
   createUser(user: UserInterface) {
+    //Quando creo un nuovo utente, l'id è pari a 0 peer questo conto quanti utenti ci sono
+    //e aggiungo uno
     user.id = this.users.length + 1;
     //alert(user)
     //splice ci permette di inserire/eliminare un elemento di un array
