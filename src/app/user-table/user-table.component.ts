@@ -21,7 +21,6 @@ export class UserTableComponent implements OnInit {
 
       //una volta catturato il parametro dall'url della rotta restituisco l'utente corrispondente
       this.User = this.userService.getUser(+p.id);
-
     });
 
   }

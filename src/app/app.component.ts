@@ -8,19 +8,20 @@ import { User } from './classes/user';
 
 export class AppComponent {
   title = 'UMS';
-  showForm = false;
-  userSelected = new User();
+  //con angular router diventa tutto inutile
+  // showForm = false;
+  // userSelected = new User();
 
-  updateUser(user: User) {
-    this.showForm = true;
-    this.userSelected = user;
-  }
+  // updateUser(user: User) {
+  //   this.showForm = true;
+  //   this.userSelected = user;
+  // }
 
-  newUser() {
-    //reinizializzo il form e lo mostro
-    this.userSelected = new User();
-    this.showForm = true;
+  // newUser() {
+  //   //reinizializzo il form e lo mostro
+  //   this.userSelected = new User();
+  //   this.showForm = true;
 
-  }
+  // }
 
 }

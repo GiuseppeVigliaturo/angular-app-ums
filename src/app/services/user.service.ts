@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import { UserInterface } from '../interfaces/user';
-
-
 @Injectable()
 
 export class UserService {
@@ -79,7 +77,7 @@ export class UserService {
 
 
   createUser(user: UserInterface) {
-    //Quando creo un nuovo utente, l'id è pari a 0 peer questo conto quanti utenti ci sono
+    //Quando creo un nuovo utente, l'id è pari a 0 per questo conto quanti utenti ci sono
     //e aggiungo uno
     user.id = this.users.length + 1;
     //alert(user)
